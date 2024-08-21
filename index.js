@@ -24,7 +24,7 @@ app.use('/api/auth', authRouter); // Use auth routes for login and signup
 app.use('/product', authMiddleware, productRouter); // Protect the product route with auth middleware
 app.use('/message', messageRouter);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6002;
 
 app.listen(PORT, () => {
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold);
